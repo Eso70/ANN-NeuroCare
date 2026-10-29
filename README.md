@@ -40,7 +40,7 @@ for current setup and the completion report for current UI verification status.
 | `backend/app/repositories/`, `services/` | Persistence and prediction orchestration |
 | `backend/app/ml/` | CSV contract, splitting/scaling, training, threshold selection, inference, audit |
 | `backend/alembic/`, `backend/tests/` | Schema migrations and automated tests |
-| `data/`, `artifacts/` | Local dataset and model versions; excluded from Git |
+| `data/`, `artifacts/` | Local datasets (ignored) and trained model versions (allowed in Git) |
 | `scripts/`, `docs/` | PowerShell helpers, setup, reports and browser evidence |
 
 Stack: React 19, Vite 6, Tailwind 4, FastAPI, SQLAlchemy 2, psycopg 3, PostgreSQL,
@@ -119,9 +119,12 @@ Leave `DATABASE_URL` unset for this local setup. Shell environment variables ove
 Changing `DB_PASSWORD` configures the client; it does not reset an existing server
 login's password. Change that login separately through an administrator when intended.
 
-The configured artifact is `artifacts/20261029T043159Z-bd9e866c`. A new checkout will
-not include ignored model/data files. Supply the dataset and train a model before
-configuring MODEL_DIR; missing artifacts produce 503, not simulated output.
+The configured artifact is `artifacts/20261029T043159Z-bd9e866c`. Trained model
+bundles in `artifacts/` are allowed in Git; add and commit them to include them in
+new checkouts. `.env.example` points to this version using this workspace's absolute
+path. Adjust `MODEL_DIR` to your checkout location on another machine. Raw datasets
+in `data/` remain ignored; inference uses the saved model without retraining.
+Missing artifacts produce 503, not simulated output.
 The current [recall policy report](docs/recall-policy-results.md) records the restored
 82.82% recall / 67.04% accuracy operating point, preserved artifacts and executed checks.
 
@@ -495,9 +498,9 @@ validation, review/edit/back/reset, keyboard controls and 25 route/viewport comb
 ## Security and troubleshooting
 
 `.gitignore` excludes root/nested `.env` files, the venv, dependencies, logs, database
-data, database backups, temporary password files, datasets and artifacts; `.env.example` remains includable.
-These patterns were verified using Git. The workspace itself is **not a Git repository**,
-so tracked-secret status cannot be audited. Do not force-add secrets when creating one.
+data, database backups, temporary password files and datasets in `data/`.
+`.env.example` and trained model bundles in `artifacts/` remain includable.
+Do not force-add secrets; ignore rules do not remove files already tracked by Git.
 No credentials appear in frontend variables or API error responses. There is no
 public repository URL or open-source license in the supplied workspace; the site
 does not claim a specific license or invent a repository link. CORS allows only

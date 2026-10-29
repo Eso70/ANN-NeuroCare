@@ -1,0 +1,60 @@
+{
+  "parent_version": "20261027T204111Z-db7cb83c",
+  "candidate_version": "20261028T214854Z-8612419f",
+  "parent_test_metrics": {
+    "accuracy": 0.6887094556099095,
+    "precision": 0.2803238469087341,
+    "recall": 0.8290523871716732,
+    "specificity": 0.6667348329925017,
+    "f2": 0.5957992658101118,
+    "roc_auc": 0.825109225878434,
+    "average_precision": 0.41665618463445464,
+    "brier_score": 0.09553490754467851,
+    "confusion_matrix": [
+      [
+        29343,
+        14667
+      ],
+      [
+        1178,
+        5713
+      ]
+    ]
+  },
+  "candidate_test_metrics": {
+    "accuracy": 0.6896328166440738,
+    "precision": 0.28144476615792313,
+    "recall": 0.8322449571905384,
+    "specificity": 0.6673028857077937,
+    "f2": 0.5981310360651634,
+    "roc_auc": 0.826496568717595,
+    "average_precision": 0.4208071375437724,
+    "brier_score": 0.09526901223999808,
+    "confusion_matrix": [
+      [
+        29368,
+        14642
+      ],
+      [
+        1156,
+        5735
+      ]
+    ]
+  },
+  "validation_recall_floor": 0.8392454954954955,
+  "validation_selected_configuration": {
+    "name": "wide",
+    "units": [
+      64,
+      32
+    ],
+    "dropout": 0.1,
+    "l2": 0.0001,
+    "learning_rate": 0.001
+  },
+  "test_used_for_selection": false,
+  "accuracy_delta": 0.0009233610341643494,
+  "recall_delta": 0.003192570018865193,
+  "note": "Previously reported parent test partition. Three candidate configurations and cutoff selected using training/validation only. Not a new independent validation.",
+  "environment_changed": false
+}

@@ -1,0 +1,19 @@
+{
+  "parent_version": "20261028T222429Z-e5a45f4d",
+  "version": "20261029T043159Z-bd9e866c",
+  "threshold": 0.132127583026886,
+  "threshold_selection": {
+    "split": "validation",
+    "objective": "maximum accuracy subject to recall floor",
+    "minimum_recall": 0.8325396825396826,
+    "test_used_for_selection": false,
+    "rows": 40390,
+    "tie_break": "higher recall, then higher threshold"
+  },
+  "model_sha256": "cd353680c50d687202582aa02d37212fc2c5695c4fa58953a3f3238b0f445424",
+  "dataset_sha256": "f02ced754232a81c646f2f58ea4fe5d4c5bea21ddc82a529dd910f905f889510",
+  "new_threshold_search": false,
+  "weights_changed": false,
+  "frozen_at_utc": "2026-10-29T04:32:00.064518+00:00",
+  "fresh_independent_validation": false
+}

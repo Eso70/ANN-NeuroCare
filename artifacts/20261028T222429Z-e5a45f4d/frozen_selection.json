@@ -1,0 +1,17 @@
+{
+  "configuration": {
+    "name": "transfer_2021",
+    "units": [
+      64,
+      32
+    ],
+    "dropout": 0.1,
+    "l2": 0.0001,
+    "learning_rate": 0.0001
+  },
+  "threshold": 0.132127583026886,
+  "model_sha256": "cd353680c50d687202582aa02d37212fc2c5695c4fa58953a3f3238b0f445424",
+  "minimum_recall": 0.8325396825396826,
+  "frozen_at_utc": "2026-10-28T22:25:05.043699+00:00",
+  "test_evaluated": false
+}

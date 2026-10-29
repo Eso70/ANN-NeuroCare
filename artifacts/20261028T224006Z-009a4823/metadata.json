@@ -1,0 +1,272 @@
+{
+  "format_version": 3,
+  "version": "20261028T224006Z-009a4823",
+  "contract_id": "cdc-brfss2021-binary-v1",
+  "features": [
+    "HighBP",
+    "HighChol",
+    "CholCheck",
+    "BMI",
+    "Smoker",
+    "Stroke",
+    "HeartDiseaseorAttack",
+    "PhysActivity",
+    "Fruits",
+    "Veggies",
+    "HvyAlcoholConsump",
+    "AnyHealthcare",
+    "NoDocbcCost",
+    "GenHlth",
+    "MentHlth",
+    "PhysHlth",
+    "DiffWalk",
+    "Sex",
+    "Age",
+    "Education",
+    "Income"
+  ],
+  "target": "CDC BRFSS 2021 DIABETE4: 1=yes; 0=no, pregnancy-only or borderline/prediabetes",
+  "threshold": 0.49337536096572876,
+  "threshold_selection": {
+    "objective": "maximum validation accuracy",
+    "split": "validation",
+    "requested_accuracy": 0.85,
+    "requested_buffer": 0.005,
+    "buffer_infeasible": true,
+    "test_used_for_selection": false,
+    "rows": 40390,
+    "tie_break": "higher recall, then higher threshold"
+  },
+  "parent_version": "20261028T222429Z-e5a45f4d",
+  "source": "CDC BRFSS 2021; https://www.cdc.gov/brfss/annual_data/annual_2021.html; https://www.cdc.gov/brfss/annual_data/2021/pdf/codebook21_llcp-v2-508.pdf",
+  "dataset_year": 2021,
+  "dataset_file": "training_cohort.csv",
+  "dataset_sha256": "f02ced754232a81c646f2f58ea4fe5d4c5bea21ddc82a529dd910f905f889510",
+  "source_csv_sha256": "e425d49e5e98dff807c21cd6ff9b2b990e3fdb014b3fb4be3b122e84a07a9c1c",
+  "raw_source_sha256": "ae7fea17e09740fd2bd306b217c58df42d86060eab85baf0d6af67e977a1eca2",
+  "model_sha256": "cd353680c50d687202582aa02d37212fc2c5695c4fa58953a3f3238b0f445424",
+  "preprocessing": {
+    "means": [
+      0.4182213009574573,
+      0.4026115035887023,
+      0.9632528166730121,
+      28.939076667089697,
+      0.4131096916113203,
+      0.0390315439175374,
+      0.08599489544114951,
+      0.7785368811427443,
+      0.6216845044206608,
+      0.8276788358221583,
+      0.06212896766642695,
+      0.9626817265253748,
+      0.06404670248318457,
+      2.4794760071633037,
+      3.929699507875404,
+      3.7706544270062183,
+      0.15412383490559387,
+      0.4782492209202307,
+      7.86831084225221,
+      5.139155632640975,
+      6.455786341779827
+    ],
+    "scales": [
+      0.4932669098803499,
+      0.49042377671432963,
+      0.1881404471253341,
+      6.54559242899278,
+      0.4923921956206456,
+      0.19367003510339628,
+      0.2803565112481165,
+      0.41523150873130127,
+      0.48496688689424783,
+      0.37765934458746686,
+      0.24138964154066558,
+      0.18954054959163316,
+      0.24483611331708197,
+      1.0318843320525917,
+      7.886180585358786,
+      8.270815003641259,
+      0.3610674153390016,
+      0.4995266795772004,
+      3.231859629148219,
+      0.9455637872732081,
+      1.8524572211456958
+    ]
+  },
+  "split_sizes": {
+    "train": 141834,
+    "validation": 40390,
+    "test": 40376
+  },
+  "seed": 42,
+  "split_method": "5 stratified profile-group folds among novel 2021 profiles; prior training matches forced to train; prior heldout matches quarantined",
+  "cross_year_overlap": {
+    "quarantined_prior_heldout_profile_rows": 13776,
+    "prior_training_profile_rows_forced_to_training": 20789,
+    "novel_profile_rows": 201811,
+    "fresh_holdout_profile_overlap_with_2015": 0
+  },
+  "class_counts": {
+    "0": 189881,
+    "1": 32719
+  },
+  "unique_profiles": 205812,
+  "epochs_completed": 19,
+  "training_configuration": {
+    "name": "transfer_2021",
+    "units": [
+      64,
+      32
+    ],
+    "dropout": 0.1,
+    "l2": 0.0001,
+    "learning_rate": 0.0001
+  },
+  "training": {
+    "optimizer": "Adam",
+    "loss": "binary_crossentropy",
+    "batch_size": 512,
+    "max_epochs": 60,
+    "early_stopping_patience": 8,
+    "restore_best_weights": true,
+    "lr_schedule": "halve after 3 plateau epochs; minimum 1e-5",
+    "initialization": "parent weights with first-layer scaling adaptation"
+  },
+  "class_weighting": "none; natural class frequencies; no survey weights",
+  "validation_metrics": {
+    "accuracy": 0.8511760336717009,
+    "precision": 0.5915136162127929,
+    "recall": 0.14825396825396825,
+    "specificity": 0.981079495453212,
+    "f2": 0.17439038052205086,
+    "roc_auc": 0.8154197758501073,
+    "average_precision": 0.4346821364243288,
+    "brier_score": 0.10737882776447284,
+    "confusion_matrix": [
+      [
+        33445,
+        645
+      ],
+      [
+        5366,
+        934
+      ]
+    ]
+  },
+  "test_metrics": {
+    "accuracy": 0.8501089756290866,
+    "precision": 0.5690104166666666,
+    "recall": 0.13952745849297574,
+    "specificity": 0.980593339587242,
+    "f2": 0.16433513838748495,
+    "roc_auc": 0.8128852065557017,
+    "average_precision": 0.429336044940854,
+    "brier_score": 0.10742899676353959,
+    "confusion_matrix": [
+      [
+        33450,
+        662
+      ],
+      [
+        5390,
+        874
+      ]
+    ]
+  },
+  "baseline_metrics": {
+    "majority_class_accuracy": 0.8448583316821875,
+    "previous_ann": {
+      "accuracy": 0.6707449970279374,
+      "precision": 0.2973128820205282,
+      "recall": 0.8231162196679438,
+      "specificity": 0.642765009380863,
+      "f2": 0.6080475494127081,
+      "roc_auc": 0.8114357142065562,
+      "average_precision": 0.4257242264360729,
+      "brier_score": 0.1078155676808912,
+      "confusion_matrix": [
+        [
+          21926,
+          12186
+        ],
+        [
+          1108,
+          5156
+        ]
+      ]
+    },
+    "previous_ann_threshold": 0.11869071424007416,
+    "previous_ann_original_cutoff": {
+      "accuracy": 0.6707449970279374,
+      "precision": 0.2973128820205282,
+      "recall": 0.8231162196679438,
+      "specificity": 0.642765009380863,
+      "f2": 0.6080475494127081,
+      "roc_auc": 0.8114357142065562,
+      "average_precision": 0.4257242264360729,
+      "brier_score": 0.1078155676808912,
+      "confusion_matrix": [
+        [
+          21926,
+          12186
+        ],
+        [
+          1108,
+          5156
+        ]
+      ]
+    },
+    "logistic_regression": {
+      "accuracy": 0.65982266693085,
+      "precision": 0.29074001456501036,
+      "recall": 0.828544061302682,
+      "specificity": 0.6288402908067542,
+      "f2": 0.6047964201645419,
+      "roc_auc": 0.8050777725998828,
+      "average_precision": 0.40995200066961773,
+      "brier_score": 0.10957823210665125,
+      "confusion_matrix": [
+        [
+          21451,
+          12661
+        ],
+        [
+          1074,
+          5190
+        ]
+      ]
+    },
+    "logistic_regression_threshold": 0.11760417544321462,
+    "previous_policy_same_weights": {
+      "accuracy": 0.6704230235783634,
+      "precision": 0.29783569665307996,
+      "recall": 0.8282247765006385,
+      "specificity": 0.6414458255159474,
+      "f2": 0.6107121836374337,
+      "roc_auc": 0.8128852065557017,
+      "average_precision": 0.429336044940854,
+      "brier_score": 0.10742899676353959,
+      "confusion_matrix": [
+        [
+          21881,
+          12231
+        ],
+        [
+          1076,
+          5188
+        ]
+      ]
+    },
+    "reference_note": "Original reference models retain their recall-focused cutoffs; majority baseline uses identical test rows."
+  },
+  "dependencies": {
+    "tensorflow": "2.19.0",
+    "numpy": "2.1.3",
+    "sklearn": "1.6.1"
+  },
+  "evaluation_note": "Previously evaluated 2021 partitions. User requested an accuracy-first operating point. Cutoff selected on validation only; learned weights unchanged. Not fresh independent validation.",
+  "limitations": "Educational unweighted complete-case survey classifier; no clinical validity or individual risk calibration. Nominal 2021 income; changed survey questions and selection bias limit cross-year comparisons.",
+  "deployment_status": "accuracy_target_reviewed",
+  "weights_changed": false,
+  "operating_point_notice": "Accuracy-first cutoff: 85.01% accuracy and 13.95% recall on the previously evaluated test partition. Most positive survey labels were missed. Educational use only."
+}

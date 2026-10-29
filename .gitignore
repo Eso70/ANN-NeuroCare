@@ -19,4 +19,4 @@
 .coverage
 coverage/
 data/
-artifacts/
+# Trained model bundles in artifacts/ are intentionally versioned.

@@ -1,0 +1,37 @@
+{
+  "threshold": 0.49337536096572876,
+  "policy": {
+    "objective": "maximum validation accuracy",
+    "split": "validation",
+    "requested_accuracy": 0.85,
+    "requested_buffer": 0.005,
+    "buffer_infeasible": true,
+    "test_used_for_selection": false,
+    "rows": 40390,
+    "tie_break": "higher recall, then higher threshold"
+  },
+  "model_sha256": "cd353680c50d687202582aa02d37212fc2c5695c4fa58953a3f3238b0f445424",
+  "dataset_sha256": "f02ced754232a81c646f2f58ea4fe5d4c5bea21ddc82a529dd910f905f889510",
+  "validation_metrics": {
+    "accuracy": 0.8511760336717009,
+    "precision": 0.5915136162127929,
+    "recall": 0.14825396825396825,
+    "specificity": 0.981079495453212,
+    "f2": 0.17439038052205086,
+    "roc_auc": 0.8154197758501073,
+    "average_precision": 0.4346821364243288,
+    "brier_score": 0.10737882776447284,
+    "confusion_matrix": [
+      [
+        33445,
+        645
+      ],
+      [
+        5366,
+        934
+      ]
+    ]
+  },
+  "frozen_at_utc": "2026-10-28T22:40:06.420057+00:00",
+  "test_evaluated": false
+}
