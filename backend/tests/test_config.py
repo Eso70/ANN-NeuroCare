@@ -1,7 +1,7 @@
 import pytest
 from sqlalchemy.engine import make_url
 
-from app.core.config import Settings
+from app.core.config import ROOT, Settings
 
 
 def settings(origin, environment="development"):
@@ -61,3 +61,32 @@ def test_invalid_database_ports_are_rejected(port):
 def test_database_password_is_required_without_url():
     with pytest.raises(ValueError, match="DB_PASSWORD"):
         Settings(_env_file=None, secret_key="test-secret-" * 4)
+
+
+@pytest.mark.parametrize("working_directory", ["root", "backend", "elsewhere"])
+def test_relative_model_path_uses_project_root(monkeypatch, tmp_path, working_directory):
+    directory = {"root": ROOT, "backend": ROOT / "backend", "elsewhere": tmp_path}
+    monkeypatch.chdir(directory[working_directory])
+    config = Settings(
+        _env_file=None, db_password="test", secret_key="test-secret-" * 4,
+        model_dir="artifacts/example-model",
+    )
+    assert config.model_dir == (ROOT / "artifacts/example-model").resolve()
+
+
+def test_absolute_model_path_is_preserved(tmp_path):
+    directory = tmp_path / "external-model"
+    config = Settings(
+        _env_file=None, db_password="test", secret_key="test-secret-" * 4,
+        model_dir=directory,
+    )
+    assert config.model_dir == directory
+
+
+@pytest.mark.parametrize("value", [None, ""])
+def test_empty_model_path_disables_inference(value):
+    config = Settings(
+        _env_file=None, db_password="test", secret_key="test-secret-" * 4,
+        model_dir=value,
+    )
+    assert config.model_dir is None

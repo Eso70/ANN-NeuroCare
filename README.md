@@ -106,7 +106,7 @@ frontend environment values. Model loading and settings are cached per process.
 | `APP_ENV` | Development environment label |
 | `SECRET_KEY` | At least 32 random characters; reserved, does not imply authentication exists |
 | `FRONTEND_URL` | CORS origin, normally `http://localhost:5173`; development also permits the matching 127.0.0.1/localhost alias on that port |
-| `MODEL_DIR` | Absolute path to a trusted version directory; empty disables inference |
+| `MODEL_DIR` | Trusted version directory, relative to the project root or absolute; empty disables inference |
 | `VITE_API_URL` | Optional public API URL; unset uses localhost:8000 in development and the site origin in production; never put secrets here |
 | `VITE_REPOSITORY_URL`, `VITE_DOCS_URL` | Optional real public HTTPS links; absent or invalid links are omitted |
 
@@ -121,8 +121,9 @@ login's password. Change that login separately through an administrator when int
 
 The configured artifact is `artifacts/20261029T043159Z-bd9e866c`. Trained model
 bundles in `artifacts/` are allowed in Git; add and commit them to include them in
-new checkouts. `.env.example` points to this version using this workspace's absolute
-path. Adjust `MODEL_DIR` to your checkout location on another machine. Raw datasets
+new checkouts. `.env.example` uses `MODEL_DIR=artifacts/20261029T043159Z-bd9e866c`.
+Relative model paths resolve from the project root regardless of the launch directory,
+so this setting works when the checkout moves to another machine. Raw datasets
 in `data/` remain ignored; inference uses the saved model without retraining.
 Missing artifacts produce 503, not simulated output.
 The current [recall policy report](docs/recall-policy-results.md) records the restored

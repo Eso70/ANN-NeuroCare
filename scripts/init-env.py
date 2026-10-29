@@ -20,7 +20,7 @@ path.write_text(
     f"# PostgreSQL: existing local service; postgres account selected for this workspace\n"
     f"DB_HOST=127.0.0.1\nDB_PORT=5432\nDB_NAME=neurocare_db\n"
     f"DB_USER=postgres\nDB_PASSWORD={quoted_password}\n\n"
-    f"# Model: absolute path to a trusted model directory; blank disables inference\nMODEL_DIR=\n",
+    f"# Model: path relative to the project root or absolute; blank disables inference\nMODEL_DIR=\n",
     encoding="utf-8",
 )
 print("Created local .env. Keep it out of version control.")

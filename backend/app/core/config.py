@@ -43,6 +43,13 @@ class Settings(BaseSettings):
     def empty_model_dir(cls, value):
         return None if value == "" else value
 
+    @field_validator("model_dir")
+    @classmethod
+    def resolve_model_dir(cls, value: Path | None) -> Path | None:
+        if value is not None and not value.is_absolute():
+            return (ROOT / value).resolve()
+        return value
+
     @field_validator("database_url")
     @classmethod
     def postgres_only(cls, value: str) -> str:
