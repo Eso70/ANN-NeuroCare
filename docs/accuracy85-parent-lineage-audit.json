@@ -1,0 +1,63 @@
+{
+  "model_version": "20261028T222429Z-e5a45f4d",
+  "dataset_sha256": "f02ced754232a81c646f2f58ea4fe5d4c5bea21ddc82a529dd910f905f889510",
+  "rows": 222600,
+  "partition_covers_all_rows_once": true,
+  "cross_split_profile_overlap": 0,
+  "saved_scaling_matches_training_only_statistics": true,
+  "threshold_matches_validation_selection": true,
+  "threshold": 0.132127583026886,
+  "split_sizes": {
+    "train": 141834,
+    "validation": 40390,
+    "test": 40376
+  },
+  "recomputed_test_metrics": {
+    "accuracy": 0.6704230235783634,
+    "precision": 0.29783569665307996,
+    "recall": 0.8282247765006385,
+    "specificity": 0.6414458255159474,
+    "f2": 0.6107121836374337,
+    "roc_auc": 0.8128852065557017,
+    "average_precision": 0.429336044940854,
+    "brier_score": 0.10742899676353959,
+    "confusion_matrix": [
+      [
+        21881,
+        12231
+      ],
+      [
+        1076,
+        5188
+      ]
+    ]
+  },
+  "saved_test_metrics_match": true,
+  "limitation": "Fresh 2021 test profiles absent from the entire old dataset. Both model and cutoff selected using validation only. Subject identity not verified; not clinical validation.",
+  "source_lineage_matches": true,
+  "raw_source_checksum_matches": true,
+  "cross_year_fresh_holdout_profile_overlap": 0,
+  "historical_heldout_profiles_excluded_from_training": true,
+  "parent_2021_metrics_recomputed": {
+    "accuracy": 0.6707449970279374,
+    "precision": 0.2973128820205282,
+    "recall": 0.8231162196679438,
+    "specificity": 0.642765009380863,
+    "f2": 0.6080475494127081,
+    "roc_auc": 0.8114357142065562,
+    "average_precision": 0.4257242264360729,
+    "brier_score": 0.1078155676808912,
+    "confusion_matrix": [
+      [
+        21926,
+        12186
+      ],
+      [
+        1108,
+        5156
+      ]
+    ]
+  },
+  "frozen_selection_matches_artifact": true,
+  "promotion_eligible_by_predeclared_metric_gate": false
+}

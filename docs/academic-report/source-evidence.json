@@ -1,0 +1,629 @@
+{
+  "model_version": "20261029T043159Z-bd9e866c",
+  "split_class_counts": {
+    "train": {
+      "rows": 141834,
+      "negative": 121679,
+      "positive": 20155,
+      "fraction": 0.6371698113207547
+    },
+    "validation": {
+      "rows": 40390,
+      "negative": 34090,
+      "positive": 6300,
+      "fraction": 0.18144654088050313
+    },
+    "test": {
+      "rows": 40376,
+      "negative": 34112,
+      "positive": 6264,
+      "fraction": 0.18138364779874214
+    }
+  },
+  "derived_from_saved_confusion_matrix": {
+    "f1": 0.43812017058649666,
+    "balanced_accuracy": 0.734835301008293,
+    "positive_prevalence": 0.15514166831781256,
+    "predicted_positive_count": 17419,
+    "brier_constant_prevalence_reference": 0.1310727310693784
+  },
+  "keras_archive_layers": [
+    {
+      "class": "InputLayer",
+      "units": null,
+      "activation": null,
+      "dropout_rate": null,
+      "kernel_regularizer": null
+    },
+    {
+      "class": "Dense",
+      "units": 64,
+      "activation": "relu",
+      "dropout_rate": null,
+      "kernel_regularizer": {
+        "module": "keras.regularizers",
+        "class_name": "L2",
+        "config": {
+          "l2": 0.0001
+        },
+        "registered_name": null
+      }
+    },
+    {
+      "class": "Dropout",
+      "units": null,
+      "activation": null,
+      "dropout_rate": 0.1,
+      "kernel_regularizer": null
+    },
+    {
+      "class": "Dense",
+      "units": 32,
+      "activation": "relu",
+      "dropout_rate": null,
+      "kernel_regularizer": {
+        "module": "keras.regularizers",
+        "class_name": "L2",
+        "config": {
+          "l2": 0.0001
+        },
+        "registered_name": null
+      }
+    },
+    {
+      "class": "Dropout",
+      "units": null,
+      "activation": null,
+      "dropout_rate": 0.1,
+      "kernel_regularizer": null
+    },
+    {
+      "class": "Dense",
+      "units": 1,
+      "activation": "sigmoid",
+      "dropout_rate": null,
+      "kernel_regularizer": null
+    }
+  ],
+  "keras_archive_metadata": {
+    "keras_version": "3.15.1",
+    "date_saved": "2026-10-29@01:25:05"
+  },
+  "parent_training_trials": [
+    {
+      "configuration": {
+        "name": "fresh_2021",
+        "units": [
+          64,
+          32
+        ],
+        "dropout": 0.1,
+        "l2": 0.0001,
+        "learning_rate": 0.001
+      },
+      "epochs_completed": 34,
+      "minimum_validation_loss_epoch": 26,
+      "validation_metrics": {
+        "accuracy": 0.6713047784104976,
+        "precision": 0.30029772128707205,
+        "recall": 0.8325396825396826,
+        "specificity": 0.6415077735406277,
+        "f2": 0.614658041531899,
+        "roc_auc": 0.8148112326381614,
+        "average_precision": 0.4347386786785058,
+        "brier_score": 0.10745310091155377,
+        "confusion_matrix": [
+          [
+            21869,
+            12221
+          ],
+          [
+            1055,
+            5245
+          ]
+        ]
+      }
+    },
+    {
+      "configuration": {
+        "name": "transfer_2021",
+        "units": [
+          64,
+          32
+        ],
+        "dropout": 0.1,
+        "l2": 0.0001,
+        "learning_rate": 0.0001
+      },
+      "epochs_completed": 19,
+      "minimum_validation_loss_epoch": 11,
+      "validation_metrics": {
+        "accuracy": 0.6731369150779896,
+        "precision": 0.3015754369825207,
+        "recall": 0.8325396825396826,
+        "specificity": 0.6436784980932825,
+        "f2": 0.6157259579263712,
+        "roc_auc": 0.8154197758501073,
+        "average_precision": 0.4346821364243288,
+        "brier_score": 0.10737882776447284,
+        "confusion_matrix": [
+          [
+            21943,
+            12147
+          ],
+          [
+            1055,
+            5245
+          ]
+        ]
+      }
+    }
+  ],
+  "features": [
+    {
+      "name": "HighBP",
+      "label": "High blood pressure indicator",
+      "min": 0,
+      "max": 1,
+      "options": [
+        {
+          "value": 0,
+          "label": "No"
+        },
+        {
+          "value": 1,
+          "label": "Yes"
+        }
+      ]
+    },
+    {
+      "name": "HighChol",
+      "label": "High cholesterol indicator",
+      "min": 0,
+      "max": 1,
+      "options": [
+        {
+          "value": 0,
+          "label": "No"
+        },
+        {
+          "value": 1,
+          "label": "Yes"
+        }
+      ]
+    },
+    {
+      "name": "CholCheck",
+      "label": "Cholesterol checked in past 5 years",
+      "min": 0,
+      "max": 1,
+      "options": [
+        {
+          "value": 0,
+          "label": "No"
+        },
+        {
+          "value": 1,
+          "label": "Yes"
+        }
+      ]
+    },
+    {
+      "name": "BMI",
+      "label": "BMI (dataset integer value)",
+      "min": 12,
+      "max": 98
+    },
+    {
+      "name": "Smoker",
+      "label": "Smoked at least 100 cigarettes in lifetime",
+      "min": 0,
+      "max": 1,
+      "options": [
+        {
+          "value": 0,
+          "label": "No"
+        },
+        {
+          "value": 1,
+          "label": "Yes"
+        }
+      ]
+    },
+    {
+      "name": "Stroke",
+      "label": "History of stroke",
+      "min": 0,
+      "max": 1,
+      "options": [
+        {
+          "value": 0,
+          "label": "No"
+        },
+        {
+          "value": 1,
+          "label": "Yes"
+        }
+      ]
+    },
+    {
+      "name": "HeartDiseaseorAttack",
+      "label": "History of coronary heart disease or heart attack",
+      "min": 0,
+      "max": 1,
+      "options": [
+        {
+          "value": 0,
+          "label": "No"
+        },
+        {
+          "value": 1,
+          "label": "Yes"
+        }
+      ]
+    },
+    {
+      "name": "PhysActivity",
+      "label": "Physical activity in past 30 days, outside work",
+      "min": 0,
+      "max": 1,
+      "options": [
+        {
+          "value": 0,
+          "label": "No"
+        },
+        {
+          "value": 1,
+          "label": "Yes"
+        }
+      ]
+    },
+    {
+      "name": "Fruits",
+      "label": "Fruit at least once per day",
+      "min": 0,
+      "max": 1,
+      "options": [
+        {
+          "value": 0,
+          "label": "No"
+        },
+        {
+          "value": 1,
+          "label": "Yes"
+        }
+      ]
+    },
+    {
+      "name": "Veggies",
+      "label": "Vegetables at least once per day",
+      "min": 0,
+      "max": 1,
+      "options": [
+        {
+          "value": 0,
+          "label": "No"
+        },
+        {
+          "value": 1,
+          "label": "Yes"
+        }
+      ]
+    },
+    {
+      "name": "HvyAlcoholConsump",
+      "label": "Heavy alcohol consumption indicator",
+      "min": 0,
+      "max": 1,
+      "options": [
+        {
+          "value": 0,
+          "label": "No"
+        },
+        {
+          "value": 1,
+          "label": "Yes"
+        }
+      ]
+    },
+    {
+      "name": "AnyHealthcare",
+      "label": "Any healthcare coverage",
+      "min": 0,
+      "max": 1,
+      "options": [
+        {
+          "value": 0,
+          "label": "No"
+        },
+        {
+          "value": 1,
+          "label": "Yes"
+        }
+      ]
+    },
+    {
+      "name": "NoDocbcCost",
+      "label": "Could not see doctor because of cost in past 12 months",
+      "min": 0,
+      "max": 1,
+      "options": [
+        {
+          "value": 0,
+          "label": "No"
+        },
+        {
+          "value": 1,
+          "label": "Yes"
+        }
+      ]
+    },
+    {
+      "name": "GenHlth",
+      "label": "General health",
+      "min": 1,
+      "max": 5,
+      "options": [
+        {
+          "value": 1,
+          "label": "Excellent"
+        },
+        {
+          "value": 2,
+          "label": "Very good"
+        },
+        {
+          "value": 3,
+          "label": "Good"
+        },
+        {
+          "value": 4,
+          "label": "Fair"
+        },
+        {
+          "value": 5,
+          "label": "Poor"
+        }
+      ]
+    },
+    {
+      "name": "MentHlth",
+      "label": "Days mental health was not good (past 30 days)",
+      "min": 0,
+      "max": 30
+    },
+    {
+      "name": "PhysHlth",
+      "label": "Days physical health was not good (past 30 days)",
+      "min": 0,
+      "max": 30
+    },
+    {
+      "name": "DiffWalk",
+      "label": "Serious difficulty walking or climbing stairs",
+      "min": 0,
+      "max": 1,
+      "options": [
+        {
+          "value": 0,
+          "label": "No"
+        },
+        {
+          "value": 1,
+          "label": "Yes"
+        }
+      ]
+    },
+    {
+      "name": "Sex",
+      "label": "Sex (source survey coding)",
+      "min": 0,
+      "max": 1,
+      "options": [
+        {
+          "value": 0,
+          "label": "Female"
+        },
+        {
+          "value": 1,
+          "label": "Male"
+        }
+      ]
+    },
+    {
+      "name": "Age",
+      "label": "Age band",
+      "min": 1,
+      "max": 13,
+      "options": [
+        {
+          "value": 1,
+          "label": "18-24"
+        },
+        {
+          "value": 2,
+          "label": "25-29"
+        },
+        {
+          "value": 3,
+          "label": "30-34"
+        },
+        {
+          "value": 4,
+          "label": "35-39"
+        },
+        {
+          "value": 5,
+          "label": "40-44"
+        },
+        {
+          "value": 6,
+          "label": "45-49"
+        },
+        {
+          "value": 7,
+          "label": "50-54"
+        },
+        {
+          "value": 8,
+          "label": "55-59"
+        },
+        {
+          "value": 9,
+          "label": "60-64"
+        },
+        {
+          "value": 10,
+          "label": "65-69"
+        },
+        {
+          "value": 11,
+          "label": "70-74"
+        },
+        {
+          "value": 12,
+          "label": "75-79"
+        },
+        {
+          "value": 13,
+          "label": "80 or older"
+        }
+      ]
+    },
+    {
+      "name": "Education",
+      "label": "Education level",
+      "min": 1,
+      "max": 6,
+      "options": [
+        {
+          "value": 1,
+          "label": "Never attended / kindergarten"
+        },
+        {
+          "value": 2,
+          "label": "Grades 1-8"
+        },
+        {
+          "value": 3,
+          "label": "Grades 9-11"
+        },
+        {
+          "value": 4,
+          "label": "High school graduate / GED"
+        },
+        {
+          "value": 5,
+          "label": "College 1-3 years"
+        },
+        {
+          "value": 6,
+          "label": "College 4+ years"
+        }
+      ]
+    },
+    {
+      "name": "Income",
+      "label": "Annual household income (2021 nominal USD)",
+      "min": 1,
+      "max": 8,
+      "options": [
+        {
+          "value": 1,
+          "label": "Under $10,000"
+        },
+        {
+          "value": 2,
+          "label": "$10,000-$14,999"
+        },
+        {
+          "value": 3,
+          "label": "$15,000-$19,999"
+        },
+        {
+          "value": 4,
+          "label": "$20,000-$24,999"
+        },
+        {
+          "value": 5,
+          "label": "$25,000-$34,999"
+        },
+        {
+          "value": 6,
+          "label": "$35,000-$49,999"
+        },
+        {
+          "value": 7,
+          "label": "$50,000-$74,999"
+        },
+        {
+          "value": 8,
+          "label": "$75,000 or more"
+        }
+      ]
+    }
+  ],
+  "current_test_metrics": {
+    "accuracy": 0.6704230235783634,
+    "precision": 0.29783569665307996,
+    "recall": 0.8282247765006385,
+    "specificity": 0.6414458255159474,
+    "f2": 0.6107121836374337,
+    "roc_auc": 0.8128852065557017,
+    "average_precision": 0.429336044940854,
+    "brier_score": 0.10742899676353959,
+    "confusion_matrix": [
+      [
+        21881,
+        12231
+      ],
+      [
+        1076,
+        5188
+      ]
+    ]
+  },
+  "current_validation_metrics": {
+    "accuracy": 0.6731369150779896,
+    "precision": 0.3015754369825207,
+    "recall": 0.8325396825396826,
+    "specificity": 0.6436784980932825,
+    "f2": 0.6157259579263712,
+    "roc_auc": 0.8154197758501073,
+    "average_precision": 0.4346821364243288,
+    "brier_score": 0.10737882776447284,
+    "confusion_matrix": [
+      [
+        21943,
+        12147
+      ],
+      [
+        1055,
+        5245
+      ]
+    ]
+  },
+  "threshold": 0.132127583026886,
+  "threshold_selection": {
+    "split": "validation",
+    "objective": "maximum accuracy subject to recall floor",
+    "minimum_recall": 0.8325396825396826,
+    "test_used_for_selection": false,
+    "rows": 40390,
+    "tie_break": "higher recall, then higher threshold"
+  },
+  "derived_parameter_count": 3521,
+  "node_version": "26.3.1",
+  "frontend_installed_versions": {
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-router-dom": "7.5.1",
+    "vite": "6.3.3",
+    "typescript": "5.8.3",
+    "axios": "1.8.4",
+    "tailwindcss": "4.1.4",
+    "lucide-react": "0.468.0",
+    "recharts": "3.0.2",
+    "eslint": "9.25.1"
+  }
+}

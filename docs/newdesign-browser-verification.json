@@ -1,0 +1,317 @@
+{
+  "date": "2026-10-29",
+  "testedOrigin": "http://localhost:5173",
+  "referencePagesVisuallyInspected": [
+    "https://rootly.com/",
+    "https://rootly.com/pricing",
+    "https://rootly.com/integrations",
+    "https://rootly.com/insights",
+    "https://rootly.com/catalog",
+    "https://rootly.com/enterprise"
+  ],
+  "layoutChecks": [
+    {
+      "documentWidth": 320,
+      "headingCount": 1,
+      "horizontalOverflow": false,
+      "path": "/",
+      "width": 320
+    },
+    {
+      "documentWidth": 320,
+      "headingCount": 1,
+      "horizontalOverflow": false,
+      "path": "/model",
+      "width": 320
+    },
+    {
+      "documentWidth": 320,
+      "headingCount": 1,
+      "horizontalOverflow": false,
+      "path": "/about",
+      "width": 320
+    },
+    {
+      "documentWidth": 320,
+      "headingCount": 1,
+      "horizontalOverflow": false,
+      "path": "/predictions",
+      "width": 320
+    },
+    {
+      "documentWidth": 320,
+      "headingCount": 1,
+      "horizontalOverflow": false,
+      "path": "/design-check-missing",
+      "width": 320
+    },
+    {
+      "documentWidth": 390,
+      "headingCount": 1,
+      "horizontalOverflow": false,
+      "path": "/",
+      "width": 390
+    },
+    {
+      "documentWidth": 390,
+      "headingCount": 1,
+      "horizontalOverflow": false,
+      "path": "/model",
+      "width": 390
+    },
+    {
+      "documentWidth": 390,
+      "headingCount": 1,
+      "horizontalOverflow": false,
+      "path": "/about",
+      "width": 390
+    },
+    {
+      "documentWidth": 390,
+      "headingCount": 1,
+      "horizontalOverflow": false,
+      "path": "/predictions",
+      "width": 390
+    },
+    {
+      "documentWidth": 390,
+      "headingCount": 1,
+      "horizontalOverflow": false,
+      "path": "/design-check-missing",
+      "width": 390
+    },
+    {
+      "documentWidth": 768,
+      "headingCount": 1,
+      "horizontalOverflow": false,
+      "path": "/",
+      "width": 768
+    },
+    {
+      "documentWidth": 768,
+      "headingCount": 1,
+      "horizontalOverflow": false,
+      "path": "/model",
+      "width": 768
+    },
+    {
+      "documentWidth": 768,
+      "headingCount": 1,
+      "horizontalOverflow": false,
+      "path": "/about",
+      "width": 768
+    },
+    {
+      "documentWidth": 768,
+      "headingCount": 1,
+      "horizontalOverflow": false,
+      "path": "/predictions",
+      "width": 768
+    },
+    {
+      "documentWidth": 768,
+      "headingCount": 1,
+      "horizontalOverflow": false,
+      "path": "/design-check-missing",
+      "width": 768
+    },
+    {
+      "documentWidth": 1024,
+      "headingCount": 1,
+      "horizontalOverflow": false,
+      "path": "/",
+      "width": 1024
+    },
+    {
+      "documentWidth": 1024,
+      "headingCount": 1,
+      "horizontalOverflow": false,
+      "path": "/model",
+      "width": 1024
+    },
+    {
+      "documentWidth": 1024,
+      "headingCount": 1,
+      "horizontalOverflow": false,
+      "path": "/about",
+      "width": 1024
+    },
+    {
+      "documentWidth": 1024,
+      "headingCount": 1,
+      "horizontalOverflow": false,
+      "path": "/predictions",
+      "width": 1024
+    },
+    {
+      "documentWidth": 1024,
+      "headingCount": 1,
+      "horizontalOverflow": false,
+      "path": "/design-check-missing",
+      "width": 1024
+    },
+    {
+      "documentWidth": 1440,
+      "headingCount": 1,
+      "horizontalOverflow": false,
+      "path": "/",
+      "width": 1440
+    },
+    {
+      "documentWidth": 1440,
+      "headingCount": 1,
+      "horizontalOverflow": false,
+      "path": "/model",
+      "width": 1440
+    },
+    {
+      "documentWidth": 1440,
+      "headingCount": 1,
+      "horizontalOverflow": false,
+      "path": "/about",
+      "width": 1440
+    },
+    {
+      "documentWidth": 1440,
+      "headingCount": 1,
+      "horizontalOverflow": false,
+      "path": "/predictions",
+      "width": 1440
+    },
+    {
+      "documentWidth": 1440,
+      "headingCount": 1,
+      "horizontalOverflow": false,
+      "path": "/design-check-missing",
+      "width": 1440
+    }
+  ],
+  "verifiedFooterLinks": [
+    {
+      "name": "Try the prediction",
+      "url": "http://localhost:5173/predictions"
+    },
+    {
+      "name": "The model & method",
+      "url": "http://localhost:5173/model"
+    },
+    {
+      "name": "How it works",
+      "url": "http://localhost:5173/#how-it-works"
+    },
+    {
+      "name": "The dataset",
+      "url": "http://localhost:5173/model#dataset"
+    },
+    {
+      "name": "Evaluation & limits",
+      "url": "http://localhost:5173/model#evaluation"
+    },
+    {
+      "name": "About NeuroCare",
+      "url": "http://localhost:5173/about"
+    },
+    {
+      "name": "Questions & answers",
+      "url": "http://localhost:5173/about#faq"
+    }
+  ],
+  "verifiedHomepageLinks": [
+    {
+      "name": "Understand the dataset",
+      "destination": "http://localhost:5173/model#dataset"
+    },
+    {
+      "name": "Explore it yourself",
+      "destination": "http://localhost:5173/predictions"
+    },
+    {
+      "name": "The story behind NeuroCare",
+      "destination": "http://localhost:5173/about"
+    },
+    {
+      "name": "A few things to know",
+      "destination": "http://localhost:5173/about#faq"
+    }
+  ],
+  "verifiedPrimaryActions": [
+    {
+      "action": "Hero methodology",
+      "url": "http://localhost:5173/model"
+    },
+    {
+      "action": "Methodology prediction",
+      "url": "http://localhost:5173/predictions"
+    },
+    {
+      "action": "Hero prediction",
+      "url": "http://localhost:5173/predictions"
+    },
+    {
+      "action": "Schema explorer prediction",
+      "url": "http://localhost:5173/predictions"
+    },
+    {
+      "action": "Architecture methodology",
+      "url": "http://localhost:5173/model"
+    },
+    {
+      "action": "About prediction",
+      "url": "http://localhost:5173/predictions"
+    },
+    {
+      "action": "Closing prediction",
+      "url": "http://localhost:5173/predictions"
+    },
+    {
+      "action": "Not-found prediction",
+      "url": "http://localhost:5173/predictions"
+    }
+  ],
+  "displayedEvidence": {
+    "metrics": [
+      "Accuracy67.0%Share of all test records classified correctly.",
+      "Recall82.8%Share of actual label 1 found.",
+      "Precision29.8%Share of positive predictions matching label 1."
+    ],
+    "outcomeCounts": [
+      "5,188",
+      "1,076",
+      "21,881",
+      "12,231"
+    ],
+    "scrollbarWidth": "none",
+    "version": "20261029T043159Z-bd9e866c"
+  },
+  "mobileMenuEscapeVerified": true,
+  "mobileMenuFocusExitVerified": true,
+  "schemaTabsArrowHomeEndVerified": true,
+  "customSelectKeyboardAndEscapeVerified": true,
+  "dropdownScrollingWithoutPageMovementVerified": true,
+  "dropdownBoundsVerifiedAt390px": true,
+  "singleFocusOutlineVerified": {
+    "style": "solid",
+    "width": "2px",
+    "boxShadow": "none"
+  },
+  "emptyFractionalAndRangeValidationVerified": true,
+  "zeroAnswersPreserved": true,
+  "reviewEditBackAndResetVerified": true,
+  "realPrediction": {
+    "httpStatus": 201,
+    "retainedSyntheticRecordId": 6,
+    "label": 0,
+    "displayedScore": "2.9%",
+    "displayedThreshold": "0.132128",
+    "modelVersion": "20261029T043159Z-bd9e866c",
+    "previousRecordsDeleted": false
+  },
+  "reducedMotionEmulationVerifiedAndCleared": true,
+  "physicalTouchTestVerified": false,
+  "touchTestLimitation": "The in-app browser does not support Input.dispatchTouchEvent; no physical-device test was performed.",
+  "capturedConsoleWarningsOrErrors": [],
+  "screenshots": [
+    ".dev-logs/newdesign-home-desktop.jpg",
+    ".dev-logs/newdesign-evaluation.jpg"
+  ]
+}

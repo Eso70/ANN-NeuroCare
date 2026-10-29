@@ -1,0 +1,17 @@
+{
+  "reviewed_model_version": "20261028T224006Z-009a4823",
+  "weights_and_scaling_match_2021_parent": true,
+  "cohort_and_splits_match_audited_parent": true,
+  "validation_selected_threshold_verified": true,
+  "accuracy_target_met_on_existing_test": true,
+  "test_accuracy": 0.8501089756290866,
+  "test_recall": 0.13952745849297574,
+  "previous_artifacts_preserved": true,
+  "environment_changed": true,
+  "live_api_restart_verified": false,
+  "only_model_dir_changed": true,
+  "configured_model_version": "20261028T224006Z-009a4823",
+  "fresh_root_configuration_and_real_inference_verified": true,
+  "public_contract_year_verified": 2021,
+  "live_api_check": "Unavailable: local socket access denied with WinError 10013"
+}

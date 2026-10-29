@@ -1,0 +1,118 @@
+{
+  "date": "2026-10-28",
+  "modelVersion": "20261027T204111Z-db7cb83c",
+  "responsive": [
+    {
+      "content": 305,
+      "overflow": false,
+      "route": "/",
+      "scroll": 305,
+      "viewport": 320
+    },
+    {
+      "content": 375,
+      "overflow": false,
+      "route": "/",
+      "scroll": 375,
+      "viewport": 390
+    },
+    {
+      "content": 753,
+      "overflow": false,
+      "route": "/",
+      "scroll": 753,
+      "viewport": 768
+    },
+    {
+      "content": 1009,
+      "overflow": false,
+      "route": "/",
+      "scroll": 1009,
+      "viewport": 1024
+    },
+    {
+      "content": 1425,
+      "overflow": false,
+      "route": "/",
+      "scroll": 1425,
+      "viewport": 1440
+    },
+    {
+      "content": 1905,
+      "overflow": false,
+      "route": "/",
+      "scroll": 1905,
+      "viewport": 1920
+    },
+    {
+      "content": 305,
+      "overflow": false,
+      "route": "/predictions",
+      "scroll": 305,
+      "viewport": 320
+    },
+    {
+      "content": 375,
+      "overflow": false,
+      "route": "/predictions",
+      "scroll": 375,
+      "viewport": 390
+    },
+    {
+      "content": 753,
+      "overflow": false,
+      "route": "/predictions",
+      "scroll": 753,
+      "viewport": 768
+    },
+    {
+      "content": 1009,
+      "overflow": false,
+      "route": "/predictions",
+      "scroll": 1009,
+      "viewport": 1024
+    },
+    {
+      "content": 1425,
+      "overflow": false,
+      "route": "/predictions",
+      "scroll": 1425,
+      "viewport": 1440
+    }
+  ],
+  "verification": {
+    "requiredErrors": 21,
+    "bmi10Rejected": true,
+    "syntheticPredictionId": 50,
+    "predictedClass": 0,
+    "predictedScore": 0.0456806905567646,
+    "threshold": 0.12848882377147675,
+    "freshPostgresSessionVerified": true,
+    "resetClearedFields": 21,
+    "faqClickAndEnter": true,
+    "mobileMenuToggleNavigationAndEscape": true,
+    "custom404": true,
+    "directPredictionRoute": true,
+    "offlineApi": true,
+    "missingModel503": true,
+    "noSubstituteMetrics": true,
+    "retryRecovery": true,
+    "failedPostNoResult": true,
+    "noPublicHistoryAdded": true
+  },
+  "tests": {
+    "backendPassed": 59,
+    "backendSkipped": 0,
+    "backendSeconds": 17.1,
+    "frontendLint": "passed",
+    "typeCheck": "passed via tsc -b",
+    "productionBuild": "passed"
+  },
+  "screenshots": [
+    "phase4-home-desktop.png",
+    "phase4-home-mobile.png",
+    "phase4-prediction-mobile.png",
+    "phase4-api-unavailable.png",
+    "phase4-model-evaluation.png"
+  ]
+}

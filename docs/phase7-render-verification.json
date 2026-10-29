@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-28",
+  "checks": {
+    "homepage_loading_no_fabricated_metrics": true,
+    "saved_evaluation_matches_artifact": true,
+    "missing_evaluation_honest": true,
+    "partial_metrics_safe": true,
+    "all_21_contract_fields_render": true,
+    "custom_comboboxes": 4,
+    "radio_groups": 14,
+    "numeric_inputs": 3,
+    "model_and_about_render": true,
+    "internal_destinations_valid": true
+  },
+  "links": [
+    "/predictions",
+    "/model",
+    "/model#dataset",
+    "/model#evaluation",
+    "/about#faq",
+    "/",
+    "/#how-it-works",
+    "/about"
+  ],
+  "model_version": "20261027T204111Z-db7cb83c",
+  "limitations": "Server rendering checks HTML and data presentation, not browser layout or interaction."
+}

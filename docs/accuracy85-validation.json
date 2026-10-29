@@ -1,0 +1,74 @@
+{
+  "split": "validation only",
+  "majority_accuracy": 0.8440207972270364,
+  "current_policy": {
+    "accuracy": 0.6731369150779896,
+    "precision": 0.3015754369825207,
+    "recall": 0.8325396825396826,
+    "specificity": 0.6436784980932825,
+    "f2": 0.6157259579263712,
+    "roc_auc": 0.8154197758501073,
+    "average_precision": 0.4346821364243288,
+    "brier_score": 0.10737882776447284,
+    "confusion_matrix": [
+      [
+        21943,
+        12147
+      ],
+      [
+        1055,
+        5245
+      ]
+    ]
+  },
+  "default_0_5": {
+    "accuracy": 0.8507551374102501,
+    "precision": 0.5925170068027211,
+    "recall": 0.13825396825396824,
+    "specificity": 0.9824288647697272,
+    "f2": 0.1632920884889389,
+    "roc_auc": 0.8154197758501073,
+    "average_precision": 0.4346821364243288,
+    "brier_score": 0.10737882776447284,
+    "confusion_matrix": [
+      [
+        33491,
+        599
+      ],
+      [
+        5429,
+        871
+      ]
+    ]
+  },
+  "targets": [
+    {
+      "floor": 0.855,
+      "error": "The validation scores cannot meet the requested accuracy floor"
+    },
+    {
+      "floor": 0.85,
+      "threshold": 0.4501318335533142,
+      "metrics": {
+        "accuracy": 0.8500123793018074,
+        "precision": 0.550755033557047,
+        "recall": 0.2084126984126984,
+        "specificity": 0.9685831622176592,
+        "f2": 0.23800029002320186,
+        "roc_auc": 0.8154197758501073,
+        "average_precision": 0.4346821364243288,
+        "brier_score": 0.10737882776447284,
+        "confusion_matrix": [
+          [
+            33019,
+            1071
+          ],
+          [
+            4987,
+            1313
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "previous_model_preserved": true,
+  "only_model_dir_changed": true,
+  "threshold": 0.11868056654930115,
+  "test_metrics": {
+    "accuracy": 0.6896328166440738,
+    "precision": 0.28144476615792313,
+    "recall": 0.8322449571905384,
+    "specificity": 0.6673028857077937,
+    "f2": 0.5981310360651634,
+    "roc_auc": 0.826496568717595,
+    "average_precision": 0.4208071375437724,
+    "brier_score": 0.09526901223999808,
+    "confusion_matrix": [
+      [
+        29368,
+        14642
+      ],
+      [
+        1156,
+        5735
+      ]
+    ]
+  },
+  "activation_checks": "Recomputed artifact integrity audit passed; observed accuracy and recall both exceed parent; configured model reload tests passed after dotenv-safe path correction.",
+  "configured_model_version": "20261028T214854Z-8612419f",
+  "live_api_restart_verified": false
+}

@@ -1,0 +1,37 @@
+{
+  "model_version": "20261027T204111Z-db7cb83c",
+  "dataset_sha256": "19f367e3e3350768f0c144c5d73ee5b355f67a57eaaa86ca7bd8aec594d8b1d0",
+  "rows": 253680,
+  "partition_covers_all_rows_once": true,
+  "cross_split_profile_overlap": 0,
+  "saved_scaling_matches_training_only_statistics": true,
+  "threshold_matches_validation_selection": true,
+  "threshold": 0.12848882377147675,
+  "split_sizes": {
+    "train": 152419,
+    "validation": 50360,
+    "test": 50901
+  },
+  "recomputed_test_metrics": {
+    "accuracy": 0.6887094556099095,
+    "precision": 0.2803238469087341,
+    "recall": 0.8290523871716732,
+    "specificity": 0.6667348329925017,
+    "f2": 0.5957992658101118,
+    "roc_auc": 0.825109225878434,
+    "average_precision": 0.41665618463445464,
+    "brier_score": 0.09553490754467851,
+    "confusion_matrix": [
+      [
+        29343,
+        14667
+      ],
+      [
+        1178,
+        5713
+      ]
+    ]
+  },
+  "saved_test_metrics_match": true,
+  "limitation": "Previously reported test partition; no new independent validation. Survey-profile grouping is not a verified person identifier."
+}

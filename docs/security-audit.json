@@ -1,0 +1,22 @@
+{
+  "ignore_rules_verified_with_git": true,
+  "ignored": [
+    ".env",
+    ".env.local",
+    ".env.production",
+    "frontend/.env",
+    "backend/.env",
+    "frontend/node_modules/example.js",
+    "backend/.venv/example.py",
+    ".postgres-data/example",
+    "artifacts/example/model.keras",
+    "data/example.csv",
+    ".pg-password"
+  ],
+  "example_files_allowed": [
+    ".env.example",
+    "frontend/.env.example"
+  ],
+  "git_repository_present": false,
+  "tracking_audit": "Unavailable: project is not a Git repository."
+}

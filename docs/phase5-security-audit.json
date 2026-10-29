@@ -1,0 +1,8 @@
+{
+  "source_files_scanned": 105,
+  "configured_secret_literal_matches_outside_env": [],
+  "git_repository_present": false,
+  "ignore_patterns_verified": true,
+  "ignored_private_and_generated_paths": 15,
+  "includable_examples_and_docs": 5
+}

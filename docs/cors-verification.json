@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-28",
+  "live_cors_checks": [
+    {
+      "origin": "http://localhost:5173",
+      "status": 200,
+      "allowed": true
+    },
+    {
+      "origin": "http://127.0.0.1:5173",
+      "status": 200,
+      "allowed": true
+    },
+    {
+      "origin": "http://127.0.0.1:5174",
+      "status": 400,
+      "allowed": false
+    },
+    {
+      "origin": "http://localhost.evil.example:5173",
+      "status": 400,
+      "allowed": false
+    }
+  ],
+  "database_health": {
+    "status": "ok",
+    "database": "connected"
+  },
+  "scope": "development only, same configured scheme and port; no wildcard origins",
+  "backend_tests_passed": 59,
+  "backend_tests_skipped": 0,
+  "ruff": "passed",
+  "browser_origin_verified": "http://127.0.0.1:5173",
+  "browser_cards": [
+    "Frontend: Connected",
+    "Backend API: Connected",
+    "PostgreSQL: Connected"
+  ],
+  "screenshot": "connection-fixed.png"
+}

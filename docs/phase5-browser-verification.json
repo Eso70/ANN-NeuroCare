@@ -1,0 +1,79 @@
+{
+  "date": "2026-10-28",
+  "browser": "Existing Google Chrome via native UI automation",
+  "app_url": "http://localhost:5173",
+  "model_version": "20261027T204111Z-db7cb83c",
+  "checks": {
+    "homepage_and_prediction_route_loaded": true,
+    "displayed_model_metrics_match_audit": true,
+    "backend_database_health_shown_connected": true,
+    "empty_form_rejected": true,
+    "bmi_10_rejected": true,
+    "corrected_bmi_25_produced_saved_result": true,
+    "tablet_navigation_open_escape_close": true,
+    "keyboard_brand_navigation_to_home": true,
+    "faq_anchor_loaded": true,
+    "faq_click_open_enter_close": true
+  },
+  "synthetic_submission": {
+    "id": 1,
+    "predicted_class": 1,
+    "displayed_score_percent": 14.0,
+    "displayed_threshold_percent": 12.85,
+    "retained_as_synthetic_demo_record": true,
+    "fresh_database_session_readback_executed": false
+  },
+  "viewports_css_pixels": [
+    {
+      "width": 400,
+      "height": 858,
+      "observed": "Homepage, form controls, single-column layout and saved result"
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "observed": "Homepage, two-column form fields and collapsible navigation"
+    },
+    {
+      "width": 1366,
+      "height": 900,
+      "observed": "Homepage, desktop navigation and hero layout"
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "observed": "Homepage, FAQ anchor and accordion"
+    }
+  ],
+  "console": {
+    "observed_react_devtools_information_message": true,
+    "observed_csp_eval_issue_count": 1,
+    "csp_source_identified": false,
+    "production_bundle_eval_call_or_new_function_matches": 0,
+    "protection_weakened": false
+  },
+  "limits": [
+    "Native UI observations, not automated DOM geometry or axe measurements.",
+    "No fresh-session SQL read-back or repeated launcher run from this restricted process.",
+    "In-app browser session mismatch; native Chrome fallback used.",
+    "Console issue source was not supplied by Chrome; cannot attribute it to the app or an extension."
+  ],
+  "screenshots": {
+    "phase5-home-desktop.png": {
+      "pixels": [
+        3842,
+        2161
+      ],
+      "sha256": "140db58c674dacd1dbd80e1407f20a09229ab4f5eb6506416131b203b1f50634",
+      "captured_from_actual_running_application": true
+    },
+    "phase5-prediction-mobile.png": {
+      "pixels": [
+        800,
+        1716
+      ],
+      "sha256": "350e2aac49721651300ec1bccaaa161b0da86e1807478bbe8b0589eec1b8646d",
+      "captured_from_actual_running_application": true
+    }
+  }
+}

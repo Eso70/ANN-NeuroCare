@@ -1,0 +1,30 @@
+{
+  "version": "20261029T043159Z-bd9e866c",
+  "parent_version": "20261028T222429Z-e5a45f4d",
+  "identical_files": [
+    "model.keras",
+    "split_indices.npz",
+    "training_cohort.csv",
+    "cohort_source_indices.npz"
+  ],
+  "weights_unchanged": true,
+  "preprocessing_unchanged": true,
+  "environment_changed": true,
+  "only_model_dir_changed": true,
+  "backend_tests_passed": 127,
+  "backend_http_tests_deselected": 3,
+  "backend_ruff_passed": true,
+  "frontend_tests_passed": 25,
+  "frontend_lint_passed": true,
+  "frontend_typescript_and_production_build_passed": true,
+  "live_api_restart_verified": false,
+  "live_http_check": "Blocked: local socket PermissionError (WinError 10013)",
+  "database_writes_performed": false,
+  "generic_integrity_audit_passed": true,
+  "fresh_root_configuration_and_real_inference_verified": true,
+  "public_contract_year_verified": 2021,
+  "api_function_metadata_verified": true,
+  "retired_accuracy_variant_rejected": true,
+  "previous_model_checksums_verified": true,
+  "restored_cutoff_actual_classification_verified": true
+}

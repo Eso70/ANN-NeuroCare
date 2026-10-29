@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-28",
+  "tested_shell": "7.6.5",
+  "startup_commands": [
+    "db-run",
+    "db-run",
+    "db-start"
+  ],
+  "all_startup_exit_codes": 0,
+  "server_start_unchanged": true,
+  "existing_demo_row_preserved": true,
+  "backend_database_health": {
+    "status": "ok",
+    "database": "connected"
+  },
+  "windows_powershell_5_child_check": "Not executed: child shell AuthorizationManager blocked script launch."
+}

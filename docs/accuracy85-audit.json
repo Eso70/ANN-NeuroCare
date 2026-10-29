@@ -1,0 +1,37 @@
+{
+  "model_version": "20261028T224006Z-009a4823",
+  "dataset_sha256": "f02ced754232a81c646f2f58ea4fe5d4c5bea21ddc82a529dd910f905f889510",
+  "rows": 222600,
+  "partition_covers_all_rows_once": true,
+  "cross_split_profile_overlap": 0,
+  "saved_scaling_matches_training_only_statistics": true,
+  "threshold_matches_validation_selection": true,
+  "threshold": 0.49337536096572876,
+  "split_sizes": {
+    "train": 141834,
+    "validation": 40390,
+    "test": 40376
+  },
+  "recomputed_test_metrics": {
+    "accuracy": 0.8501089756290866,
+    "precision": 0.5690104166666666,
+    "recall": 0.13952745849297574,
+    "specificity": 0.980593339587242,
+    "f2": 0.16433513838748495,
+    "roc_auc": 0.8128852065557017,
+    "average_precision": 0.429336044940854,
+    "brier_score": 0.10742899676353959,
+    "confusion_matrix": [
+      [
+        33450,
+        662
+      ],
+      [
+        5390,
+        874
+      ]
+    ]
+  },
+  "saved_test_metrics_match": true,
+  "limitation": "Previously evaluated 2021 partitions. User requested an accuracy-first operating point. Cutoff selected on validation only; learned weights unchanged. Not fresh independent validation."
+}

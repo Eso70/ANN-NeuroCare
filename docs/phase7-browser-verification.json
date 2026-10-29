@@ -1,0 +1,193 @@
+{
+  "date": "2026-10-28",
+  "session": "Isolated local review session",
+  "checks": {
+    "blank_validation_and_first_field_focus": true,
+    "keyboard_home_end_arrows_enter_escape_tab": true,
+    "prefix_typeahead": true,
+    "single_focus_outline": {
+      "width": "2px",
+      "style": "solid",
+      "shadow": "none"
+    },
+    "menu_outside_dismissal": true,
+    "mobile_menu_fits": {
+      "viewportWidth": 390,
+      "viewportHeight": 844,
+      "left": 38,
+      "right": 337,
+      "top": 512.03125,
+      "bottom": 812.03125
+    },
+    "all_21_answers_reviewed": true,
+    "back_and_edit_preserve_values": true,
+    "zero_values_preserved": true,
+    "offline_post_keeps_answers_and_focuses_error": true,
+    "loading_disables_submission": true,
+    "actual_post_status": 201,
+    "saved_record": 4,
+    "predicted_class": 0,
+    "displayed_score": "0.3%",
+    "displayed_cutoff": "12.85%",
+    "model_version": "20261027T204111Z-db7cb83c",
+    "reset_clears_answers": true,
+    "homepage_unavailable_has_zero_metric_blocks": true,
+    "homepage_retry_recovers_real_metrics": true,
+    "mobile_navigation_escape": true,
+    "model_confusion_matrix_matches_saved_counts": true,
+    "faq_and_services_disclosures": true,
+    "methodology_anchors_visible": true,
+    "not_found_recovery": true,
+    "fresh_console_errors": []
+  },
+  "layout_checks": [
+    {
+      "width": 320,
+      "route": "/",
+      "client": 305,
+      "overflow": false,
+      "scroll": 305
+    },
+    {
+      "width": 320,
+      "route": "/predictions",
+      "client": 305,
+      "overflow": false,
+      "scroll": 305
+    },
+    {
+      "width": 320,
+      "route": "/model",
+      "client": 305,
+      "overflow": false,
+      "scroll": 305
+    },
+    {
+      "width": 320,
+      "route": "/about",
+      "client": 305,
+      "overflow": false,
+      "scroll": 305
+    },
+    {
+      "width": 390,
+      "route": "/",
+      "client": 375,
+      "overflow": false,
+      "scroll": 375
+    },
+    {
+      "width": 390,
+      "route": "/predictions",
+      "client": 375,
+      "overflow": false,
+      "scroll": 375
+    },
+    {
+      "width": 390,
+      "route": "/model",
+      "client": 375,
+      "overflow": false,
+      "scroll": 375
+    },
+    {
+      "width": 390,
+      "route": "/about",
+      "client": 375,
+      "overflow": false,
+      "scroll": 375
+    },
+    {
+      "width": 768,
+      "route": "/",
+      "client": 753,
+      "overflow": false,
+      "scroll": 753
+    },
+    {
+      "width": 768,
+      "route": "/predictions",
+      "client": 753,
+      "overflow": false,
+      "scroll": 753
+    },
+    {
+      "width": 768,
+      "route": "/model",
+      "client": 753,
+      "overflow": false,
+      "scroll": 753
+    },
+    {
+      "width": 768,
+      "route": "/about",
+      "client": 753,
+      "overflow": false,
+      "scroll": 753
+    },
+    {
+      "width": 1280,
+      "route": "/",
+      "client": 1265,
+      "overflow": false,
+      "scroll": 1265
+    },
+    {
+      "width": 1280,
+      "route": "/predictions",
+      "client": 1265,
+      "overflow": false,
+      "scroll": 1265
+    },
+    {
+      "width": 1280,
+      "route": "/model",
+      "client": 1265,
+      "overflow": false,
+      "scroll": 1265
+    },
+    {
+      "width": 1280,
+      "route": "/about",
+      "client": 1265,
+      "overflow": false,
+      "scroll": 1265
+    },
+    {
+      "width": 1920,
+      "route": "/",
+      "client": 1905,
+      "overflow": false,
+      "scroll": 1905
+    },
+    {
+      "width": 1920,
+      "route": "/predictions",
+      "client": 1905,
+      "overflow": false,
+      "scroll": 1905
+    },
+    {
+      "width": 1920,
+      "route": "/model",
+      "client": 1905,
+      "overflow": false,
+      "scroll": 1905
+    },
+    {
+      "width": 1920,
+      "route": "/about",
+      "client": 1905,
+      "overflow": false,
+      "scroll": 1905
+    }
+  ],
+  "limitations": [
+    "Responsive emulation, not physical mobile hardware",
+    "No screen-reader certification or broad browser-engine matrix",
+    "No fresh SQL retrieval of record #4"
+  ],
+  "cleanup": {
+    "network_conditions_restored": true
+  }
+}

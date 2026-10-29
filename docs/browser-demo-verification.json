@@ -1,0 +1,10 @@
+{
+  "browser_demo_row_id": 7,
+  "retrieved_in_new_database_session": true,
+  "inputs_match_synthetic_browser_form": true,
+  "model_version": "20261027T204111Z-db7cb83c",
+  "predicted_class": 0,
+  "score": 0.0456806905567646,
+  "data_kind": "synthetic university demonstration, not a real person",
+  "retained_for_demonstration": true
+}

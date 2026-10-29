@@ -1,0 +1,66 @@
+{
+  "source": "https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset",
+  "sha256": "19f367e3e3350768f0c144c5d73ee5b355f67a57eaaa86ca7bd8aec594d8b1d0",
+  "rows": 253680,
+  "class_counts": {
+    "0": 218334,
+    "1": 35346
+  },
+  "unique_profiles": 227908,
+  "unique_full_rows": 229474,
+  "profile_overlap_between_splits": 0,
+  "splits": {
+    "train": {
+      "rows": 152419,
+      "positive": 21351
+    },
+    "validation": {
+      "rows": 50360,
+      "positive": 7104
+    },
+    "test": {
+      "rows": 50901,
+      "positive": 6891
+    }
+  },
+  "model_version": "20261027T203103Z-5eefa372",
+  "test_metrics": {
+    "accuracy": 0.869904324080077,
+    "precision": 0.5992619926199262,
+    "recall": 0.11783485705993324,
+    "roc_auc": 0.8251092275271141,
+    "average_precision": 0.41665618149879324,
+    "brier_score": 0.09553490754339677,
+    "confusion_matrix": [
+      [
+        43467,
+        543
+      ],
+      [
+        6079,
+        812
+      ]
+    ]
+  },
+  "baseline_metrics": {
+    "logistic_regression": {
+      "accuracy": 0.8665055696351741,
+      "precision": 0.5226843100189036,
+      "recall": 0.16049920185749528,
+      "roc_auc": 0.8161832291581862,
+      "average_precision": 0.3905293381056002,
+      "brier_score": 0.09798424869324181,
+      "confusion_matrix": [
+        [
+          43000,
+          1010
+        ],
+        [
+          5785,
+          1106
+        ]
+      ]
+    },
+    "majority_class_accuracy": 0.8646195556079448
+  }
+}
